@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+ <meta charset="utf-8">
+	</head>
+	<body>
+	<h1> Теги форм </h1>
+	<form id='form_id' action= "#" method='post'
+	target=""
+	autocomplete="on"
+	>
+
+	<fieldset
+	form="form_id"
+	name=""
+	>
+	<div> 
+				<label for="textfield"> однострочное текстовое поле </label>
+				<input id="textfield" 
+				type="text"
+				placeholder="text"
+				required
+				maxlength="2">
+	</div>
+
+	<div>
+				<label for="passwordfield"> Поле для пароля  </label>
+				<input id="passwordfield" type="password" maxlength="5">
+	</div>
+
+	<div>
+				<label for="giddenfield"> Скрытое поле  </label>
+				<input id="hiddenfield" type="hidden" maxlength="5">
+	</div>
+
+	<div>
+				<label for="textareafield"> Многострочный текст  </label>
+				<textarea id="textareadfield" type="text" maxlength="5" cols="4" rows="6 maxlength="67 placeholder="Подсказка" required disabled readonly autofocus> </textarea>
+	</div>
+
+	<fieldset> 
+		<legend> Загрузка файлов </legend>
+		<div>
+			<label for= "filefield" > ТОлько файл одного типа </label>
+			<input id="filefield" type="file">
+		</div>
+
+		<div>
+			<label for= "filefield" > Множество файлов</label>
+			<input id="filefield" type="file" multiple>
+		</div>
+
+		</fieldset>
+		<fieldset>
+		<legend> Переключатели </legend>
+
+		<fieldset> 
+		<legend>Одиночные радио-кнопки </legend>
+				<label> 
+				<input type="radio">  Hey </label>
+		</fieldset>
+			<fieldset>
+			<legend> Радио группа</legend>
+			<label> 
+			<input name="sex" type="radio" > M
+			</label>
+			<label> 
+			<input name="sex" type="radio"  > W
+			</label>
+			<label> 
+			<input name="sex" type="radio" > I don`t know 
+			</label>
+		</fieldset>
+		<fieldset>
+		<legend> Группа Флажков </legend>
+		<label> 
+			<input name="sex" type="checkbox" > M
+			</label>
+			<label> 
+			<input name="sex" type="checkbox"  > W
+			</label>
+			<label> 
+			<input name="sex" type="checkbox" > I don`t know 
+			</label>
+		</fieldset>
+			<fieldset>
+				<legend> Кнопка </legend>
+				<button type="submit"<!--- reset ; button -->> </button>
+					<button type="submit"
+					formaction="#"
+					formmethod= "post / get"
+					formvalidate
+					value=""
+					disabled
+					> </button>
+
+				<input type="button" value="обычная кнопка">
+				<input type="submit" value="отправить">
+				<input type="reset" value="сброс">
+				<input type="image"  src="null" alt="Регистрация" value="сброс">
+		</fieldset>
+			<fieldset>
+				<legend> Поле со списком </legend>
+				<select autofocus form="" size="5">
+						<option selected value="1"> Item </option>
+						<option value="2"> Item </option>
+						<option value="3"> Item </option>
+						<option value="4"> Item </option>
+						<option value="5"> Item </option>
+						<option value="6"> Item </option>
+				</select>
+
+				<select multiple autofocus form="" size="5">
+						<option selected value="1"> Item </option>
+						<option value="2"> Item </option>
+						<option value="3"> Item </option>
+						<option value="4"> Item </option>
+						<option value="5"> Item </option>
+						<option value="6"> Item </option>
+				</select>
+
+				<select multiple autofocus form="" size="5">
+						<option selected value="1"> Item </option>
+						<optgroup label="Группа" <option value="2"> Item </option>>
+						<option value="3"> Item </option>
+						<option value="4"> Item </option>
+						<option value="5"> Item </option>
+						<option value="6"> Item </option>
+						<option value="2"> Item </option>
+						<option value="3"> Item </option>
+						<option value="4"> Item </option>
+						<option value="5"> Item </option>
+						<option value="6"> Item </option>
+						</fieldset>
+				</select>
+					<fieldset> 
+
+						<div>
+							<label for="emailfield"> Email </label>
+							<input id="emailfield" type="email">
+						</div>
+
+						<div>
+							<label for="colorfield"> Color Select</label>
+							<input id="colorfield" type="color">
+						</div>
+
+							<div>
+							<label for="numberfield"> Ввод чисел</label>
+							<input id="numberfield" type="number" value="6" min="0" max="10" step="2">
+						</div>
+
+						<div>
+							<label for=" rangefield"> Ввод чиселс с помощью бегунка</label>
+							<input id="rangefield" type="range" value="6" min="0" max="100" step="2">
+						</div>
+
+						<div>
+							<label for="datetime"> дата </label>
+							<input type="datetime-local" >
+						</div>
+
+						<div>
+							<label for="searchfield"> поле поиска </label>
+							<input id="searchfield" type="search" >
+						</div>
+
+							<div>
+							<label for="phonefield"> поле поиска </label>
+							<input id="phonefield" type="tel" pattern =" " >
+						</div>
+
+	</body>
+</html>
