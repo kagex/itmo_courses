@@ -1,0 +1,94 @@
+/* комментарий
+h3 {
+	color:gray;
+}
+*/
+
+/*селектор 
+	{
+		#блок объявлений
+		свойство 1: значение;
+		свойство 2: значение;
+		свойство 3: значение1 значение2;
+	}
+
+	селектор + блок объявлений = правило
+*/
+
+/*типы селекторов :
+1) классы -> .имя_класса
+2) селекторы тегов -> имя_тега
+3) идентефикаторы -> #logo 
+4) контекстные селекторы -> .имя_класса тег
+*/
+
+/* Классы */
+.circle {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 50px;
+}
+/* Селекторы тегов*/
+/*body
+	{
+		background: blue;
+	}
+
+/* Идентефикаторы*/
+#red {
+	background-color: red
+}
+#yellow {
+	background-color: yellow
+}
+#green {
+	background-color: green
+}
+
+/* Контекстные */
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+}
+
+/* Групировка */
+.block1 {
+	background: red;
+	width: 200px;
+	height:  100px;
+}
+.block2 {
+	background: red;
+	width: 100px;
+	height:  100px;
+}
+.block3 {
+	background: red;
+	width: 20px;
+	height:  100px;
+}
+
+/* Наследование */
+p {
+	font-style: italic;
+}
+p.red_text {
+	color: red;
+}
+
+/*Значения стилевых свойств */
+/*
+1) Строки - "значение"
+2) Числа - 40, дробные и целые;
+3) проценты - 40%;
+4) размеры - 40 px, 1.3em, 12pt, 60%;
+5) цвета - #00000, red, rgb (0,0,0)
+6) адреса - url (../путь)
+7)	Ключевые слова - left, top, none 
+*/
