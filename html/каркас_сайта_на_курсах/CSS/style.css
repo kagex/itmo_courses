@@ -1,14 +1,22 @@
 /*@import url(); Импорт и подключение */
 /* header */
+.wrapper {
+	margin: 0, auto;
+	width: 960px;
+}
+
 .fixed_block {
 	position: fixed;
 	left: 0;
 	right:0;
 	top:0;
+	z-index: 2;
 }
+
 header {
 	height: 150px;
 	border: gray solid;
+	background: black;
 
 }
 /* end of header*/
@@ -72,27 +80,32 @@ header {
 
 /* Info Blocks */
 	.info_block {
-		width: 30%;
+		/* width: 30%; */
 		height: 200px;
-		display: inline-block;
+		/*display: inline-block; */
 		border: gray solid;
-		background-image: url(../img/4.jpg);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-color: black;
-		margin-left: 40px;
+		/*background-image: url(../img/4.jpg); */
+		/*background-repeat: no-repeat;
+		background-size: contain; */
+		background-color: white;
+		margin: 10px;
+		position: relative;
 
 	}
-	.new_block {
-		border: gray solid;
+	.news_block {
+		/*border: gray solid;
+		background-color: white;
 		width: 30%;
 		height: 400px;
 		float: right;
-		margin-right: 20px;
+		margin-right: 20px; */
 	}
 /* end of Info Blocks*/
 
 /* Text */
+.cols_text3 .cols_text2 {
+	text-align: justify;
+}
 	.cols_text2 {
 		columns: 2;
 	}

@@ -1,0 +1,41 @@
+
+/* отступы - padding
+.block {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	padding: 10px;
+	padding: 10px 15px; /* top/bottom - right/left */
+	padding: 10px 15px 20px /* top - right/left - bottom */
+	padding: 10px 15px 20px 25px ; /* top - right - bottom - left */
+}
+ */
+
+
+/* поля - margin 
+.block {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+	margin: 10px;
+	margin: 10px 15px; /* top/bottom - right/left */
+	margin: 10px 15px 20px /* top - right/left - bottom */
+	margin: 10px 15px 20px 25px ; /* top - right - bottom - left */
+}
+*/
+
+
+/* рамка - border 
+
+.block {
+	border: ширина стиль цвет;
+	border: 1px dashed red ;
+}
+
+.block 
+*/
+

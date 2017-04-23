@@ -1,0 +1,27 @@
+.block {
+	margin: 40px;
+	padding: 60px;
+	border: 2px solid red;
+	height: 30px;
+	width: 40px;
+	background: gray;
+}
+
+/* фактическая ширина блока - ширина+левый отступ +правый отступ + левое поле + правое поле */
+
+.block1 {
+	/*box-sizing: content-box; */
+	box-sizing: border-box; /* фактическая ширина блока - ширина + левое поле + правое поле */
+}
+
+
+.block2 {
+	/*display: none; */
+	visibility: hidden | collapse | visible;
+}
+
+/* margin collapse
+
+margin соединяются
+*/
+

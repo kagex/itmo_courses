@@ -92,3 +92,64 @@ p.red_text {
 6) адреса - url (../путь)
 7)	Ключевые слова - left, top, none 
 */
+
+/* ПСЕВДОКЛАССЫ*/
+
+a:hover {
+	color: white;
+
+}
+a:link {}
+
+a:visited {}
+
+a:focus {}
+
+:disabled {}
+
+:enabled {}
+
+:checked {}
+
+/* Положение в DOM дереве*/
+:root;
+
+li:nth-child(even) {} (четные элементы)
+
+li:nth-child(odd) {} (нечетные элементы)
+
+li:nth-child(index) {} (задать конкретный элемент)
+
+li:nth-child() {an+b} ( можно задать формулу)
+
+:first-child {}; (первый дочерний элемент)
+
+:last-child {}; (последний дочерний элемент)
+
+/* ПСЕВДОЭЛЕМЕНТЫ */
+
+p:first-letter {} ;
+
+.row: after {
+ 	clear: both ;
+}
+
+p {
+	color: red !important;
+}
+
+h1 {
+	color: blue !important
+}
+
+h1 {
+	color: yellow !important
+}
+
+
+/* Специфичность селектора
+
+	идентефикатор - 100 / 0.1.0.0
+	класс, псевдокласс - 10 / 0.0.1.0
+	элемент, псевдоэлемент - 1 / 0.0.0.1
+*/

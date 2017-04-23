@@ -1,0 +1,41 @@
+/* Верстка слоями */
+
+/* Плавающий элемент */
+
+/* float: left| right | none
+	1.) Становятся блочными
+	2)обтекаются строчными */
+
+.block {
+	float: left;
+}
+
+/* clear: left |right | both; */
+
+p {
+	clear: both;
+}
+
+.bord {
+	width: 200px;
+	height: 200px;
+	border: 2px solid red;
+	overflow: hidden;
+	/* overflow: hidden| scroll | visible; */
+}
+
+/* ПОЗИЦИОНИРОВАННИЕ */
+
+.pos {
+	position: static; /* по умолчанию */
+	position: fixed; /* фиксированная относительно окна браузера */
+	position: absolute; /* абсолютное от ближайшего элемента с position: relative; , если такого элемента нет, то относительно окна браузера */
+	position: relative; /* относительное положению элемента */
+
+}
+/* задание координат */
+
+	top: 13px;
+	left: 2px;
+	right: 0;
+	bottom: 45;
