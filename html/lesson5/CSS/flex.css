@@ -1,0 +1,86 @@
+p {
+	background:green;
+	margin: 15px;
+}
+.flex-container1 {
+	display: flex;
+	background: red;
+	/*justify-content: flex-end;
+	justify-content: center; 
+	justify-content: space-around;*/
+	justify-content: space-between;
+}
+
+.flex-container2 {
+	display: flex;
+	background: red;
+	/*align-items: center;
+	align-items: stretch; */
+	align-items:baseline;
+	/*align-items: flex-start;*/
+
+}
+
+.flex-container3 {
+	display: flex;
+	background: red;
+	/*align-items: center;
+	align-items: stretch; */
+	align-items:stretch;
+	/*align-items: flex-start;*/
+	flex-direction: row;
+	/*flex-direction: row-reverse;
+	flex-direction: column;
+	flex-direction: column-reverse; */
+
+}
+
+.flex-container4 {
+	display: flex;
+	background: red;
+	align-items: stretch;
+	width: 300px;
+	/*flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
+	flex-wrap:nowrap; */
+}
+
+.flex-container5 {
+	display: flex;
+	background: red;
+	align-items: stretch;
+	width: 300px;
+	height: 400px;
+	flex-wrap: wrap-reverse;
+	flex-direction: row;
+	align-content: flex-end;
+	align-content: center;
+
+}
+
+
+.flex-container6 {
+	display: flex;
+	background: red;
+	align-items: stretch;
+	
+
+}
+
+.order {
+	order: 3;
+}
+
+.flex-basis {
+	flex-basis: 300px;
+	/*flex-grow: 3;  растяжение */
+	/*flex-shrink: 6; */ /* сужение */
+
+}
+
+.align-self {
+	/*align-self: center; */
+	/*align-self: stretch; */
+	/*align-self: flex-start; */
+	align-self: flex-end; 
+}
