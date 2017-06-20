@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+	</head>
+
+	<body>
+        <script>
+            function User(str) {
+                if (str!== undefined && typeof str === "string") {
+                    this.name = str;
+                }
+                else {
+                    this.name = "Anonim"
+                }
+                this.toString = function(){
+                    return "Name of user is:" + this.name;
+                }
+            }
+            
+            var user1 = new User();
+            var user2 = new User("Alex");
+            
+            console.log(user1 +"");
+             console.log(user2+"");
+        </script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<doctype html>
+    <html>
+        <head>
+           <meta charset="utf-8">
+            <title> 3 задание</title>  
+        </head>
+            <body>
+                <a href="index.html"> Возврат в "меню"</a>
+                <script>
+                    var X = prompt("Введите первое число",5);
+                    var Y = prompt("Введите второе число",1);
+                    var x_old= X;
+                    var y_old= Y;
+                    var x_dub = X;
+                    var y_dub = Y;
+                    if (X>Y) {
+                        X=y_dub;
+                        Y=x_dub;
+                    }
+                    
+                    alert("Было X="+x_old+" и Y="+y_old + " стало X="+ X +" и Y=" +Y)
+                </script>
+            </body>
+    </html>

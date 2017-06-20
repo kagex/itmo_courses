@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+	</head>
+
+	<body>
+        <script>
+            function storage() {
+                if (storage.instance)
+                    return storage.instance;
+            }
+            function storage() {
+                this.arr = [];
+                this.set = function(key,data) {
+                    this.arr[key]=data;
+                }
+                this.get = function(key){
+                    return this.arr[key];
+                }
+                storage.instance = this;
+            }
+        </script>
+	</body>
+</html>

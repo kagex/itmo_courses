@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div class="text">
+		Текст в начале
+		<p>
+			Текст в параграфе
+		</p>
+		Текст в конце
+	</div>
+<script>
+	$(".text").children().each(function(){
+		alert($(this).text());
+	});
+ 
+	$(".text").contents().each(function(){
+		alert($(this).text());
+	});
+</script>
+</body>
+</html>

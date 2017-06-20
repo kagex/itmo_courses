@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+	</head>
+
+	<body>
+        <input id="input">
+        <button id="button"> Отправить</button>
+        <ul id="ul"></ul>
+        
+        <script>
+            button.addEventListener('click',function() {
+                var content = input.value;
+                var e = document.createElement('li');
+                e.innerText = content;
+                ul.append(e);
+                input.value = "";
+                
+            })
+        </script>
+	</body>
+</html>

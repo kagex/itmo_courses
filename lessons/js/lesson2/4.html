@@ -1,0 +1,25 @@
+<doctype! html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <script>
+                var strHTML = "";
+                
+                var x= prompt("Число проходов")
+                var n =1;
+                var y=1;
+                strHTML+= "<table> <tr> <th> N </th> <th> N*2 </th> </tr> </table>";
+                    document.write(strHTML);
+                while (n<=x) {
+                    var y = prompt("Введите "+n+ " число");
+                    var num = "";
+                    num+= "<table> <tr> <th> " +y+ "</th> <th> " +y*2+ "</th> </tr> </table>";
+                    n++;
+                     document.write(num);
+                }
+            </script>
+        </body>
+      
+    </html>

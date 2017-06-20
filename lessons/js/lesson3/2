@@ -1,0 +1,17 @@
+<doctype! html>
+    <head>
+    </head>
+<body>
+    <script>
+            var chck = /\d \(\d\d\d\) \d\d\d \d\d \d\d/;
+            var num = prompt("Введите номер телефона");
+            valid = chck.test(num);
+            if (valid=true) {
+                alert("номер верный");
+                }
+            else {
+                alert("номер неверный");
+            }
+    </script>
+    </body>
+</html>

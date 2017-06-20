@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+       
+        <script>
+           var makecounter = function(){
+               var count=0;
+               
+               return function() {
+                   return ++count;
+               }
+           }
+           var counter = makecounter();
+           for (var i=0;i<25;i++) {
+               counter();
+           }
+            console.log(counter());
+        </script>
+
+
+    </body>
+
+</html>

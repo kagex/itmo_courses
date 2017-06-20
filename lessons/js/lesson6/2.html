@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+       
+        <script>
+            
+              function pow(x,n) 
+            {
+                  if (n==0)   {
+                     return 1;
+                  }
+                   if (n==1)   {
+                     return x;
+                  }  
+                if (n>1) {
+                    var res=1;
+                    for (i=1;i<=n;i++) {
+                        
+                        res*=x;
+                        console.log(x+"^"+i+"="+res)
+                    }
+                    return res;
+                }
+             }
+        </script>
+
+
+    </body>
+
+</html>

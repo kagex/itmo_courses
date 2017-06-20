@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<ul class="vertical-menu">
+		<li><a href="#about">Описание</a></li>
+		<li><a href="#terms">Условия приема</a></li>
+		<li><a href="#program">Программа</a></li>
+		<li><a href="#timetable">Расписание</a></li>
+	</ul>
+<script>
+	$('a').one('click', function(){
+		alert('Вы нажали на элемент a ' + $(this).text());
+		return false;
+	});
+</script>
+</body>
+</html>

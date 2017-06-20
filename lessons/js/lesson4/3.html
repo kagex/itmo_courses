@@ -1,0 +1,36 @@
+<doctype! html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+        </head>
+        
+        <body>
+            <script>
+                var a = [3,5,1,8,7,11,0,20,32,17];
+                var len = a.length;
+                var temp = 0;
+                var temp2 = 0;
+                console.log("Первоначальный массив ("+a+")");
+                for (j=0;j<len-1;j++) {
+                    for (i=0;i<len-1;i++) {
+                        if (a[i]>a[i+1]) {
+                            temp=a[i];
+                            temp2=a[i+1];
+                            a[i]=temp2;
+                            a[i+1]=temp;
+                        }
+                    else {
+                            temp=a[i];
+                            temp2=a[i+1];
+                            a[i]=temp;
+                            a[i+1]=temp2;
+                    }
+//                console.log(a)
+                }
+                
+                }
+                console.log("Конечный результат ("+a+")")
+                
+            </script>
+        </body>    
+    </html>

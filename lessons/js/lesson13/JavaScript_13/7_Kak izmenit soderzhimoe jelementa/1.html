@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div class="container_text">
+	  <div class="demo-box"></div>
+	  <ul>
+	    <li>First</li>
+	    <li>Second</li>
+	  </ul>
+	</div>
+	<div class="container_html">
+	  <div class="demo-box"></div>
+	  <ul>
+	    <li>First</li>
+	    <li>Second</li>
+	  </ul>
+	</div>
+<script>
+  $('div.container_text').text('<p> This is Text! </p>');
+  $('div.container_html').html('<p> This is Text! </p>');
+</script>
+</body>
+</html>

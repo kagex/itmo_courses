@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<script>
+		jQuery(function(){
+			jQuery('#menu').addClass('menu')
+				.html('<li><a href=″/home″>Home</a></li>')
+				.on('click', 'a', handler);	
+				
+			function handler(){
+				alert('press link');
+				return false;
+			}
+		});
+	</script>
+	<div id="menu"></button>
+</body>
+</html>

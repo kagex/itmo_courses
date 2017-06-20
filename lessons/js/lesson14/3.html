@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<script src="js/Stuk-jszip-ab3829a/dist/jszip.min.js"></script>
+		<script src="jquery-3.2.1.min.js"></script>
+	</head>
+
+	<body>
+        <input type="file" id="input"> 
+        <script>
+            $("input").on("change",function(e) {
+                var file = this.files[0];
+                console.log(file);
+            });
+            
+            var new_zip = new JSZip();
+                // more files !
+                new_zip
+                .loadAsync(file)
+                .then(function(zip) {
+                   zip 
+                    .file("xl/sharedstrings/")
+                    .async("string")
+                    .then(function(data){
+                       var dic = $parseXml(data);
+                        console.log(dic);
+                        
+                    })
+                    // you now have every files contained in the loaded zip
+                    new_zip.file("hello.txt").async("string"); // a promise of "Hello World\n"
+                });
+
+
+        </script>
+	</body>
+</html>

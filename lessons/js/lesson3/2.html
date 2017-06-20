@@ -1,0 +1,20 @@
+<doctype! html>
+    <head>
+    <meta charset="utf-8">
+    </head>
+<body>
+    <script>
+            var i = 0;
+            var str = prompt("Введите текст строки");
+            var key = prompt("Введите ключ(1 символ)");
+            var sub_str = "";
+            while (i<str.length) {
+                var sup=str.charCodeAt(i)^key.charCodeAt(i);
+                 sub_str+= String.fromCharCode(sup);
+                i++;
+                console.log(sup);
+            }
+        alert(sub_str);
+    </script>
+    </body>
+</html>

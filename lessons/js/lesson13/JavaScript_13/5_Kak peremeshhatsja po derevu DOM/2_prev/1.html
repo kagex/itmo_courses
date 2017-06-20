@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <script src="jquery-3.2.1.min.js"></script>
+<style>
+    div{
+      width: 60px;
+      height: 60px;
+      float: left;
+      padding: 15px;
+      margin: 5px;
+      background-color: #EEEEEE;
+      font-size: 14pt;
+    }
+  </style>
+</head>
+<body>
+  <div class="breakfast"> Завтрак </div>
+  <div class="lunch"> Обед </div>
+  <div class="supper"> Ужин </div>
+  <div class="nightEat"> Ночной перекус</div>
+<script>
+    $(".supper").prev().css("border","3px solid red");
+</script>
+</body>
+</html>

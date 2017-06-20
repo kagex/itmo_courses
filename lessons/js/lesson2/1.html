@@ -1,0 +1,17 @@
+<doctype! html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <script>
+                var money =+ prompt("Введите вашу зарплату")
+                var days_work =+ prompt("Введите количество рабочих дней")
+                var worked =+ prompt("Введите количество отработаных дней")
+                var money_get = ((money*worked)/days_work);
+                var money_and_nalog = (money_get - money_get*13/100);
+                alert("Ваша зарплата без налога ="+money_get.toFixed(2)+ " рублей а с налогом="+money_and_nalog.toFixed(2)+" рублей")
+            </script>
+        </body>
+      
+    </html>

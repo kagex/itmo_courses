@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+	</head>
+
+	<body>
+        <script>
+            Array.prototype.remove = function(ind) {
+                var arr = this.slice(0);
+                arr.splice(ind,1);
+                return arr;
+            }
+        </script>
+	</body>
+</html>

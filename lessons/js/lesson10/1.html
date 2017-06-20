@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+	</head>
+
+	<body>
+       <div id="box" style="height:400px"> </div>
+        <script> 
+            function integeriterrator(_from,_to) {
+                this._from = _from;
+                this._to= _to;
+                var curr = _from;
+                
+                this.iter = function() {
+                    if(curr === this._to) {
+                 return curr;
+            }
+                    if (this._from<this._to) {
+                return curr++;
+                    }
+                        else if (this._to < this._from) {
+                           return curr-- ;
+                        }
+                        else {
+                            return curr;
+                        }
+                
+                
+                };
+            };
+            var itera = new integeriterrator(0,5);
+            
+            
+              var redChannel=new integeriterrator(0,255);
+    var greenChannel=new integeriterrator(0,255);
+    var blueChannel=new integeriterrator(0,255);
+            
+             function changeColorDiv(){
+        box.style.background="rgb("+redChannel.iter()+","+
+                greenChannel.iter()+","+
+                blueChannel.iter()+")";
+    }
+    setInterval(changeColorDiv, 50)
+        </script>
+	</body>
+</html>

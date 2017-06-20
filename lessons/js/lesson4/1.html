@@ -1,0 +1,42 @@
+<doctype! html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+        </head>
+        
+        <body>
+            <script>
+            var mass=  [2,3,7,13,5,0,20]
+            var res_mass= mass;
+            lngth= mass.length;
+            var min = mass[0];
+            var max = 0;
+            var i=1;
+            var sum=mass[0];
+            for (i=1;i<lngth;i++) {
+                sum=mass[i]+sum;
+                if (mass[i]<min) {
+                    min=mass[i];
+                }
+                else {
+                    max=mass[i];
+                }
+                console.log("min ["+i+"]="+min);
+                console.log("max ["+i+"]="+max);
+                console.log("sum ["+i+"]="+sum);
+                
+            }
+                sum= sum/lngth;
+                console.log("Massiv = ("+mass+")")
+
+                delete res_mass[0];
+                delete res_mass[lngth-1];
+
+                console.log("end min="+min);
+                console.log("end max="+max);
+                console.log("end sum="+sum);  
+                console.log("end f-l="+res_mass);  
+               
+            </script>
+        </body>    
+    </html>

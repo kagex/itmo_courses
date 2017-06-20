@@ -1,0 +1,55 @@
+<doctype html>
+    <html>
+        <head>
+           <meta charset="utf-8">
+            <title> 2 задание</title>  
+        </head>
+            <body>
+                <a href="index.html"> Возврат в "меню"</a>
+                <script>
+                    var pos = " положительное ";
+                    var neg = " отрицательное ";
+                    var p1 = " и однозначное";
+                    var p2 = " и двухзначное";
+                    var p3 = " и трехзначное";
+                    var a = prompt("введите целое число в диапазоне от -999 до 999");
+                    if (-999<=a && a<=999) {
+                        
+                    }
+                    else {
+                        alert("Не катит");
+                        
+                    }
+                    
+                    if (a==0) {
+                        alert("Число нулевое");
+                    }
+                    var mod = Math.abs(a);
+                    
+                    if (a>0 && 1000>mod && mod>=100) {
+                        alert("Число  "+a +pos +p3)
+                    }
+                    
+                     if (a<0 && 1000>mod &&mod>=100) {
+                        alert("Число  "+a +neg +p3)
+                    }
+                    
+                     if (a>0 && 100>mod &&mod>=10) {
+                        alert("Число  "+a +pos +p2)
+                    }
+                    
+                     if (a<0 && 100> mod &&mod>=10) {
+                        alert("Число  "+a +neg +p2)
+                    }
+                    
+                     if (a>0 && 10>mod &&mod>=1) {
+                        alert("Число  "+a +pos +p1)
+                    }
+                    
+                     if (a<0 && 10> mod &&mod>=1) {
+                        alert("Число  "+a +neg +p1)
+                    }
+                    
+                </script>
+            </body>
+    </html>

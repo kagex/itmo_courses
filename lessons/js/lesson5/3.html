@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+       
+        <script>
+            var res = 0;
+            var n = prompt("");
+            var m = prompt("");
+           var summ = function (n,m) {
+               var res = 0;
+               for (k=n;k<=m;k++) {
+              res+=k;}
+               return (res);
+           };
+          
+           var content {
+               aqua: 85,
+               carbon: 10,
+               gas: {
+                   oxygen:3,
+                    nitrogen:5  
+               }
+           };
+            
+            var objprint= function(object,level=0) {
+                var result ='';
+                
+                if (typeof object==='object'){
+                    for (var key in object){
+                        if (typeof object[key]==='object') objprint(object[key],level+1)
+                    } 
+                    else {
+                        result += '$(level)\t$(key): $(object[key])\n'
+                    }
+                }
+            }
+        </script>
+
+
+    </body>
+
+</html>

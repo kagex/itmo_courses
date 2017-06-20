@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<ul class="vertical-menu">
+		<li><a href="#about">Описание</a></li>
+		<li><a href="#terms">Условия приема</a></li>
+		<li><a href="#program">Программа</a></li>
+		<li><a href="#timetable">Расписание</a></li>
+	</ul>
+<script>
+  $('ul.vertical-menu').before('<ul> Ul Element insert before! </ul>');
+  $('ul.vertical-menu').prepend('<li> Li Element insert prepend! </li>');
+  $('ul.vertical-menu').append('<li> Li Element insert append! </li>');
+  $('ul.vertical-menu').after('<ul> Ul Element insert after! </ul>');
+</script>
+</body>
+</html>
